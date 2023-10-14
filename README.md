@@ -1,6 +1,6 @@
 # Master-Thesis
 
-# Lognormal-Field Based Inference on Weak Lensing Convergence Maps with Graph Convolutional Neural Networks
+## Lognormal-Field Based Inference on Weak Lensing Convergence Maps with Graph Convolutional Neural Networks
 
 This repository contains the code used in my master's thesis, titled 'Lognormal-Field Based Inference on Weak Lensing Convergence Maps with Graph Convolutional Neural Networks' (see Masterarbeit.pdf). The code has been refactored and enriched with comments for better readability and educational purposes.
 
