@@ -8,7 +8,7 @@ Welcome to the repository for my master's thesis, titled 'Lognormal-Field Based 
 
 The repository is organized into four subdirectories, each of which corresponds to different aspects of the thesis:
 
-1. **Theory_and_Basics**: This subdirectory covers the content of chapters 2, 3, 4, and 6 of my thesis. It provides an in-depth exploration of the theoretical foundations of my research, including topics such as statistics in the cosmic density field, fundamentals of observational cosmology, the theory of weak gravitational lensing, and neural networks. Additionally, I've included essential tools for observational cosmology, such as the Boltzmann Solver (Class) and Healpy.
+1. **Theory_and_Basics**: This subdirectory covers the content of chapters 2, 3, 4, and 6 of my thesis. I've included basic Tensorflow codes and essential tools for observational cosmology, such as the Boltzmann Solver (Class) and Healpy.
 
 2. **Lognormal_Simulation**: Chapter 5 of my thesis is mirrored in this subdirectory, focusing on the simulation pipeline. This is where I generate training, validation, and test datasets for the training of Graph Convolutional Neural Networks (GCNNs).
 
