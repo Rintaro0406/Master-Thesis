@@ -1,1 +1,1 @@
-![GitHub Logo](https://github.com/github.png)
+![Yugioh_Card]([https://github.com/github.png](https://github.com/Rintaro0406/Master-Thesis/blob/main/Theory_and_Basics/README.md)https://github.com/Rintaro0406/Master-Thesis/blob/main/Theory_and_Basics/README.md)
