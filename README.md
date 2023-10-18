@@ -15,4 +15,4 @@ The repository is organized into four subdirectories, each corresponding to diff
 4. **Result**: In this subdirectory, I present the results of my analysis. It includes the plots not only from Chapter 8 but also from Appendices B and C.
 
 Feel free to explore each subdirectory for a deeper understanding of the code and its alignment with my master's thesis.
-[<img src="Yugioh_Card.png" width="250"/>](Yugioh_Card.png)
+[<img src="NS_096.jpg" width="250"/>](Yugioh_Card.png)
