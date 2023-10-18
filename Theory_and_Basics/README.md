@@ -1,1 +1,1 @@
-[<img src="Yugioh_Card.png" width="100"/>](Yugioh_Card.png)
+[<img src="Yugioh_Card.png" width="150"/>](Yugioh_Card.png)
