@@ -16,6 +16,7 @@ The repository is organized into four subdirectories, each of which corresponds 
 
 4. **Result**: In this subdirectory, I present the results of my analysis. It includes the plots not only from Chapter 8 but also from Appendices B and C.
 
+Hopefully our дедушка is happy with this!
 
   [<img src="NS_096.jpg" width="350"/>](NS_096.jpg)
 
