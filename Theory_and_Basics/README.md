@@ -1,1 +1,1 @@
-[<img src="Yugioh_Plack.png" width="250"/>](Yugioh_Planck.png)
+[<img src="Yugioh_Planck.png" width="250"/>](Yugioh_Planck.png)
