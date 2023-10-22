@@ -2,7 +2,7 @@
 My thesis consists of two statistical pipelines: simulation and inference. In the simulation pipeline, we generate training, validation, and test datasets using lognormal and Gaussian models of cosmic density fields.
 We create 10,000 (10 random realizations times 1,000 cosmological realizations) lognormal and Gaussian maps for the training datasets, 2,500 lognormal and Gaussian maps for the validation datasets, and 300 lognormal maps along with Gaussian maps (1 fiducial cosmology). Gaussian maps are used to train the GCNN model for comparison with models trained on lognormal data. 
 Additionally, we use T17 simulations as test datasets since N-body simulations provide an accurate model for describing late-time density fields, allowing us to assess the validity of both lognormal and Gaussian approximations. For the T17 simulations, all other cosmological parameters are set the same as in the T17 paper, and only $\sigma_8$ and $\Omega_m$ are sampled. T17 simulations are also used for quality checks of our simulations.
-This section corresponds to the plots in chapter 5 of my thesis ([Masterarbeit.pdf](./../Masterarbeit.pdf)).
+This section corresponds to the plots in chapter 5 of my thesis ([Masterarbeit.pdf](Masterarbeit.pdf)).
 
 [<img src="Yugioh_Planck.png" width="250"/>](Yugioh_Planck.png)
 
