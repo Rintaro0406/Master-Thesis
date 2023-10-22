@@ -28,7 +28,3 @@ Please feel free to explore each subdirectory to gain a deeper understanding of 
 
 For a detailed examination of the thesis, you can refer to [Masterarbeit.pdf](Masterarbeit.pdf).
 
-## References
- Defferrard M., Milani M., Gusset F., Perraudin N. DeepSphere: a graph-based spherical CNN, 2020, [https://arxiv.org/abs/astro-ph/0303072](https://arxiv.org/abs/astro-ph/0303072)
- Perraudin N,, Defferard M., Kacprzak T., Sgier R. DeepSphere: Efficient spherical convolutional neural network with {HEALPix} sampling for cosmological applications, Astronomy and Computing, 2019, [https://arxiv.org/abs/1810.12186](https://arxiv.org/abs/1810.12186)
- 
