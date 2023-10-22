@@ -4,6 +4,9 @@
 
 Welcome to the repository for my master's thesis, titled 'Lognormal-Field Based Inference on Weak Lensing Convergence Maps with Graph Convolutional Neural Networks.' This repository contains the code used for my research, and it has been refactored and enriched with comments to improve readability and educational value.
 
+## Motivation of my Thesis
+Non-linear cosmic structure formation yields non-Gaussianity in late-time cosmic density fields. However, the standard inference pipeline for cosmic shear surveys relies on two-point statistics, which are not sensitive to non-Gaussian information. In contrast, inference directly on the weak lensing field can access this non-Gaussian information at small scales. In this thesis, we develop an estimator for standard cosmological parameters directly from the lensing field, using graph convolutional neural networks trained with lognormal simulations.
+
 ## Repository Structure
 
 The repository is organized into four subdirectories, each of which corresponds to different aspects of the thesis:
@@ -16,7 +19,7 @@ The repository is organized into four subdirectories, each of which corresponds 
 
 4. **Result**: In this subdirectory, I present the results of my analysis. It includes the plots not only from Chapter 8 but also from Appendices B and C.
 
-
+## References
   [<img src="NS_096.jpg" width="350"/>](NS_096.jpg)
 
 
