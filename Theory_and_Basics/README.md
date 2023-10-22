@@ -3,6 +3,8 @@ In modern cosmology, including my thesis, numerical calculations are essential. 
 
 [<img src="Yugioh_Planck.png" width="250"/>](Yugioh_Planck.png)
 
+## Contents
+
 1. **Introduction1_Python.ipynb:** My code on master thesis is primarily based on Python. This notebook covers the basics of Python and explores visualizing statistical distributions, calculating the Hubble parameter, and cosmological distances using basic Python packages such as scipy and numpy.
    
 2. **Introduction2_Healpy.ipynb:** Healpy provides a set of numerical tools for working with data distributed on the celestial sphere. The aim of this code is to learn how to visualize sky data and calculate the angular power spectrum. We use Planck data CMB and weak lensing convergence map from N-body simulation as an example.
