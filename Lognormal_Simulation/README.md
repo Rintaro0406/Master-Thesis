@@ -4,7 +4,7 @@ We create 10,000 (10 random realizations times 1,000 cosmological realizations) 
 Additionally, we use T17 simulations as test datasets since N-body simulations provide an accurate model for describing late-time density fields, allowing us to assess the validity of both lognormal and Gaussian approximations. For the T17 simulations, all other cosmological parameters are set the same as in the T17 paper, and only $\sigma_8$ and $\Omega_m$ are sampled. T17 simulations are also used for quality checks of our simulations.
 This section corresponds to the plots in chapter 5 of my thesis ([Masterarbeit.pdf](Masterarbeit.pdf)).
 
-[<img src="Simulation_pipeline.jpg" width="250"/>](Simulation_pipeline.jpg)
+[<img src="Simulation_pipeline.jpg" width="1000"/>](Simulation_pipeline.jpg)
 
 ## Contents
 
