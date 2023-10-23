@@ -32,7 +32,7 @@ In modern cosmology, including my thesis, numerical calculations are essential. 
 
 
 ## References
-[1] Dodelson S., chmidt F., Modern Cosmology Second Edition., Academic Press, 2020, ISBN 978-0-12-815948-4
+[1] Dodelson S., Schmidt F., Modern Cosmology Second Edition., Academic Press, 2020, ISBN 978-0-12-815948-4
 
 [2] Bartelmann M., Schneider P. , Weak gravitational lensing, Physics Reports, 2001, [https://arxiv.org/abs/astro-ph/9912508](https://arxiv.org/abs/astro-ph/9912508)
 
