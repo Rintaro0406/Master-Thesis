@@ -47,6 +47,11 @@ In the subdirectory, you can find the source code for the simulation pipeline us
 
 14. **Flask_val.config:** This is the configuration file for Flask used in validation data sets.
 
+## External Links and Installation
+(1) **Install HealPix**, You need HealPix (not healpy) to run Flask. You can install it from from [https://healpix.jpl.nasa.gov/html/install.htm](https://healpix.jpl.nasa.gov/html/install.htm)
+
+(2) **Install Flask**, You can install Flask using this guide at [https://github.com/ucl-cosmoparticles/flask](https://github.com/ucl-cosmoparticles/flask). If you encounter any errors, you may need to modify the source code.
+
 ## References
 [1] Hilbert S., Hartlap J., Scheider P., Cosmic shear covariance: the log-normal approximation, Astronomy and Astrophysics, 2011, [https://arxiv.org/abs/1105.3980](https://arxiv.org/abs/1105.3980) 
 
