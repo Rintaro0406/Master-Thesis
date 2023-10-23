@@ -28,7 +28,7 @@ In modern cosmology, including my thesis, numerical calculations are essential. 
 
 (4) **Documentation of CLASS**, Access the comprehensive documentation and nice exercises for  [https://lesgourg.github.io/class_public/class.html](https://lesgourg.github.io/class_public/class.html)
 
-(5) **Install DeepSphere**, For the TensorFlow v2 version, you can install it from GitHub page [https://github.com/deepsphere/deepsphere-cosmo-tf2](https://github.com/deepsphere/deepsphere-cosmo-tf2), For the PyTorch version, visit (https://github.com/deepsphere/deepsphere-pytorch)[https://github.com/deepsphere/deepsphere-pytorch]
+(5) **Install DeepSphere**, For the TensorFlow v2 version, you can install it from GitHub page [https://github.com/deepsphere/deepsphere-cosmo-tf2](https://github.com/deepsphere/deepsphere-cosmo-tf2), For the PyTorch version, visit [https://github.com/deepsphere/deepsphere-pytorch](https://github.com/deepsphere/deepsphere-pytorch)
 
 
 ## References
