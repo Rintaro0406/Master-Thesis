@@ -18,20 +18,35 @@ This section corresponds to the contents and plots in chapter 5 of my thesis ([M
 
 ## Contents
 
-1. **Introduction1_Python.ipynb:** My code on master thesis is primarily based on Python. This notebook covers the basics of Python and explores visualizing statistical distributions, calculating the Hubble parameter, and cosmological distances using basic Python packages such as scipy and numpy.
+In this directory, you'll find the following code and Python notebooks:
+1. **Validation_Simulaion_Pipeline.ipynb:** This notebook assesses the validity of our simulation pipeline by comparing the measured power spectrum with that from the T17 simulation [[2]](https://doi.org/10.3847%2F1538-4357%2Faa943d). It also discusses various correction factors applied to power spectrum modeling.
    
-2. **Introduction2_Healpy.ipynb:** Healpy provides a set of numerical tools for working with data distributed on the celestial sphere. The aim of this code is to learn how to visualize sky data and calculate the angular power spectrum. We use Planck data CMB and weak lensing convergence map from N-body simulation as an example.
+2. **Limber_Model_Without_Both.py:** Limber power spectrum without any correction factors.
 
-3. **Introduction3_CLASS.ipynb:** How to compare observations and theory in cosmology? One way is by using the power spectrum. However, computing the power spectrum analytically is a challenging task due to various complex effects. The Boltzmann Solver is a numerical code used to solve a set of linearized Einstein field equations and the Boltzmann equation, taking into account several effects. In this introduction, we demonstrate the method to compute various types of power spectra (CMB, CMB polarization, matter, convergence) from your cosmology.
+3. **Limber_Model_Test_Without_Finite_Resolution.py:** Limber power spectrum without any correction factors.
 
-4. **Introduction4_TensorFlow.ipynb:** TensorFlow is an open-source machine learning framework developed by the Google Brain team. In this introduction, we demonstrate the basics of computation using TensorFlow and address a fundamental binary classification problem. 
+4. **Limber_Model_Test_Without_Shellthickness.py:** Limber power spectrum with finite angular resolution of sky maps.
+   
+5. **Limber_Model_Test.py:** Limber power spectrum with both correction factors.
 
-5. **Introduction5_Keras.ipynb:** Keras is a straightforward package that makes it easy to implement machine learning models. My code for GCNN inference is also based on the Keras.Sequential model. When diving into a more practical problem like 'Boston Housing Price'. We should apply it to Novogarchinsk!
+In the subdirectory, you can find the source code for the simulation pipeline used in my thesis:
 
-6. **Introduction6_CNN.ipynb:** GCNN is based on the idea of CNN, therefore we go to the basics of Convolutional Neural Networks (CNN). We explore MNIST images (vllt, Multi-Layer Perceptron ist schon ok für MNIST). In the future, I would like to implement it for Hebrew alphabet characters(since handwritten giml and zayen are confusing to me)!
+6. **Prior_Training.ipynb:** This notebook samples a set of cosmological parameters from a range of priors using Latin Hypercube sampling [[8]](https://arxiv.org/abs/2106.03846). A total of 1,000 sets of cosmological parameters are sampled for training data sets.
+   
+7. **Prior_Validation.ipynb:** It is the same as Prior_Training.ipynb, but a total of 250 sets of cosmological parameters are sampled for validation data sets.
+   
+8. **Flask_sim_train.py:** This code covers steps (i) to (iv) in the structure of the pipeline. First, *class Cosmology_T17* loads constants, the redshift distribution, and cosmological parameters except $\sigma_8$ and $\Omega_m*. *class Kappa_Power_Spectrum_T17* calculates the convergence power spectrum. CLASS [[3]](https://arxiv.org/abs/1104.2932) is run in function LambdaCDM, then *function Cl* provides the convergence power spectrum from the given matter power spectrum. *class Generate_Flask_Maps* generates lognormal maps and Gaussian maps. *function log_normal_shift_parameter* is based on CosMomentum [[3]](https://doi.org/10.1093%2Fmnras%2Fstaa216) and calculates the shift parameter for given cosmological parameters. *function generate_log_normal_map* runs Flask [[6]](https://doi.org/10.1093%2Fmnras%2Fstw874) for the given convergence power spectrum from *class Kappa_Power_Spectrum_T17* and shift parameters from function log_normal_shift_parameter.
+ 
+10. **Flask_sim_test.py:** This code is used for test data sets, similar to **Flask_sim_train.py**.
 
-7. **Introduction7_DeepSphere.ipynb:**  This code explains the basics of my inference pipeline, which is based on DeepSphere. The code is essentially a downgraded monkey model of my full inference code, with training data at a lower angular resolution and using MSE loss. To run this code, you do not require multiple GPUs, and training can be completed in just 10 minutes.
-    
+11. **Flask_sim_val.py:** This code is used for validation data sets, similar to **Flask_sim_train.py**.
+
+12. **Flask_info.dat:** This data is updated throughout the simulation pipeline.
+
+13. **Flask.config:** It contains various variables used for Flask in **Flask_sim_train.py**.
+
+14. **Flask_val.config:** This is the configuration file for Flask used in validation data sets.
+
 ## References
 [1] Hilbert S., Hartlap J., Scheider P., Cosmic shear covariance: the log-normal approximation, Astronomy and Astrophysics, 2011, [https://arxiv.org/abs/1105.3980](https://arxiv.org/abs/1105.3980) 
 
