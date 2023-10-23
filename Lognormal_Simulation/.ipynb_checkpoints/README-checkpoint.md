@@ -4,7 +4,6 @@ We create 10,000 (10 random realizations times 1,000 cosmological realizations) 
 Additionally, we use T17 simulations as test datasets since N-body simulations provide an accurate model for describing late-time density fields, allowing us to assess the validity of both lognormal and Gaussian approximations. For the T17 simulations, all other cosmological parameters are set the same as in the T17 paper [[2]](https://doi.org/10.3847%2F1538-4357%2Faa943d), and only $\sigma_8$ and $\Omega_m$ are sampled. T17 simulations [[2]](https://doi.org/10.3847%2F1538-4357%2Faa943d) are also used for quality checks of our simulations.
 This section corresponds to the contents and plots in chapter 5 of my thesis ([Masterarbeit.pdf](Masterarbeit.pdf)).
 
-
 ## Structure of Simulation Pipeline
 
 [<img src="Flask_Simulation.PNG" width="700"/>](Flask_Simulation.PNG)
@@ -69,3 +68,4 @@ In the subdirectory, you can find the source code for the simulation pipeline us
 [7] Halder A., Friedrich O., Seitz S., Varga T., The integrated three-point correlation function of cosmic shear, Monthly Notices of the Royal Astronomical Society, 2021, [https://doi.org/10.1093%2Fmnras%2Fstab1801](https://doi.org/10.1093%2Fmnras%2Fstab1801)
 
 [8] Spurio Mancini A., Piras D., Alsing J., Joachimi B., Hobson M., CosmoPower: emulating cosmological power spectra for accelerated Bayesian inference from next-generation surveys, Monthly Notices of the Royal Astronomical Society, 2022, [https://arxiv.org/abs/2106.03846](https://arxiv.org/abs/2106.03846) 
+
