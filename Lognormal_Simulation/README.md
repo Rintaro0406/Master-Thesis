@@ -1,10 +1,20 @@
 ## Section 2: Lognormal Simulation
 My thesis consists of two statistical pipelines: simulation and inference. In the simulation pipeline, we generate training, validation, and test datasets using lognormal and Gaussian models of cosmic density fields.
 We create 10,000 (10 random realizations times 1,000 cosmological realizations) lognormal and Gaussian maps for the training datasets, 2,500 lognormal and Gaussian maps for the validation datasets, and 300 lognormal maps along with Gaussian maps (1 fiducial cosmology). Gaussian maps are used to train the GCNN model for comparison with models trained on lognormal data. 
-Additionally, we use T17 simulations as test datasets since N-body simulations provide an accurate model for describing late-time density fields, allowing us to assess the validity of both lognormal and Gaussian approximations. For the T17 simulations, all other cosmological parameters are set the same as in the T17 paper, and only $\sigma_8$ and $\Omega_m$ are sampled. T17 simulations are also used for quality checks of our simulations.
+Additionally, we use T17 simulations as test datasets since N-body simulations provide an accurate model for describing late-time density fields, allowing us to assess the validity of both lognormal and Gaussian approximations. For the T17 simulations, all other cosmological parameters are set the same as in the T17 paper[1](https://doi.org/10.3847%2F1538-4357%2Faa943d), and only $\sigma_8$ and $\Omega_m$ are sampled. T17 simulations [1](https://doi.org/10.3847%2F1538-4357%2Faa943d) are also used for quality checks of our simulations.
 This section corresponds to the plots in chapter 5 of my thesis ([Masterarbeit.pdf](Masterarbeit.pdf)).
 
+## Structure of Simulation Pipeline
+
 [<img src="Flask_Simulation.PNG" width="700"/>](Flask_Simulation.PNG)
+
+(i) **Matter Power Spectrum Generation** Firstly, I generate the power spectrum for the provided cosmological parameters using the Boltzmann solver, which is CLASS.
+
+(ii) **Projection Integral** The line of sight integration of matter spectrum yields the convergence angular power spectrum. Here is employing the source galaxy redshift distribution from DES Y3 data.
+
+(iii) **Lognormal Shift Parameter** To realize the lognormal field, a lognormal shift parameter is required for given cosmology. This parameter is computed using CosMomentum, a tool to model the PDF of cosmic density fields.
+
+(iV) **Generation of Convergence Maps** Generate full-sky lognormal convergence maps along with correspondng Gaussian convergence maps for the training and validation datasets. These maps are produced using the input power spectra and lognormal shift parameters, employing Flask.
 
 ## Contents
 
@@ -23,15 +33,8 @@ This section corresponds to the plots in chapter 5 of my thesis ([Masterarbeit.p
 7. **Introduction7_DeepSphere.ipynb:**  This code explains the basics of my inference pipeline, which is based on DeepSphere. The code is essentially a downgraded monkey model of my full inference code, with training data at a lower angular resolution and using MSE loss. To run this code, you do not require multiple GPUs, and training can be completed in just 10 minutes.
     
 ## References
-Dodelson S., Schmidt F., Modern Cosmology Second Edition., Academic Press, 2020, ISBN 978-0-12-815948-4
 
-Zonca A., Singer L., Lenz D., Reinecke M., Rosset C., Hivon E., Gorski K., healpy: equal area pixelization and spherical harmonics transforms for data on the sphere in Python., The Open Journal, 2019, [https://doi.org/10.21105/joss.01298](https://doi.org/10.21105/joss.01298) 
-
-Gorski K., Hivon E., Banday A., Wandelt B., Hansen F., Reinecke M., Bartelmann M., HEALPix: A Framework for High-Resolution Discretization and Fast Analysis of Data Distributed on the Sphere., The Astrophysical Journal, 2005, [https://ui.adsabs.harvard.edu/abs/2005ApJ...622..759G](https://ui.adsabs.harvard.edu/abs/2005ApJ...622..759G)
-
-Planck Collaboration, et al., Planck 2018 results. VI. Cosmological parameters., Astronomy and Astrphysics, 2020, [https://arxiv.org/abs/1807.06209](https://arxiv.org/abs/1807.06209)
-
-Takahashi R., Hamana T., Shirasaki M., Namikawa T., Nishimichi T., Osato K., Shiroyama K., Full-sky Gravitational Lensing Simulation for Large-area Galaxy Surveys and Cosmic Microwave Background Experiments, The Astrophysical Journal, 2017, [https://doi.org/10.3847%2F1538-4357%2Faa943d](https://doi.org/10.3847%2F1538-4357%2Faa943d)
+[1] Takahashi R., Hamana T., Shirasaki M., Namikawa T., Nishimichi T., Osato K., Shiroyama K., Full-sky Gravitational Lensing Simulation for Large-area Galaxy Surveys and Cosmic Microwave Background Experiments, The Astrophysical Journal, 2017, [https://doi.org/10.3847%2F1538-4357%2Faa943d](https://doi.org/10.3847%2F1538-4357%2Faa943d)
 
 Mukhanov V., CMB-slow, or How to Estimate Cosmological Parameters by Hand, International Journal of Theoretical Physics, 2004, [https://arxiv.org/abs/astro-ph/0303072](https://arxiv.org/abs/astro-ph/0303072)
 
