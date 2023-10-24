@@ -59,20 +59,22 @@ In the subdirectory **GCNN_Models**, you can find the source code for the traine
 
 ## References
 
-[1] Zonca A., Singer L., Lenz D., Reinecke M., Rosset C., Hivon E., Gorski K., healpy: equal area pixelization and spherical harmonics transforms for data on the sphere in Python., The Open Journal, 2019, [https://doi.org/10.21105/joss.01298](https://doi.org/10.21105/joss.01298) 
+[1] Zonca A., Singer L., Lenz D., Reinecke M., Rosset C., Hivon E., Gorski K., *healpy: equal area pixelization and spherical harmonics transforms for data on the sphere in Python.*, The Open Journal, 2019, [https://doi.org/10.21105/joss.01298](https://doi.org/10.21105/joss.01298) 
 
-[2] Gorski K., Hivon E., Banday A., Wandelt B., Hansen F., Reinecke M., Bartelmann M., HEALPix: A Framework for High-Resolution Discretization and Fast Analysis of Data Distributed on the Sphere., The Astrophysical Journal, 2005, [https://ui.adsabs.harvard.edu/abs/2005ApJ...622..759G](https://ui.adsabs.harvard.edu/abs/2005ApJ...622..759G)
+[2] Gorski K., Hivon E., Banday A., Wandelt B., Hansen F., Reinecke M., Bartelmann M., *HEALPix: A Framework for High-Resolution Discretization and Fast Analysis of Data Distributed on the Sphere.*, The Astrophysical Journal, 2005, [https://ui.adsabs.harvard.edu/abs/2005ApJ...622..759G](https://ui.adsabs.harvard.edu/abs/2005ApJ...622..759G)
 
-[3] Takahashi R., Hamana T., Shirasaki M., Namikawa T., Nishimichi T., Osato K., Shiroyama K., Full-sky Gravitational Lensing Simulation for Large-area Galaxy Surveys and Cosmic Microwave Background Experiments, The Astrophysical Journal, 2017, [https://doi.org/10.3847%2F1538-4357%2Faa943d](https://doi.org/10.3847%2F1538-4357%2Faa943d)
+[3] Takahashi R., Hamana T., Shirasaki M., Namikawa T., Nishimichi T., Osato K., Shiroyama K., *Full-sky Gravitational Lensing Simulation for Large-area Galaxy Surveys and Cosmic Microwave Background Experiments*, The Astrophysical Journal, 2017, [https://doi.org/10.3847%2F1538-4357%2Faa943d](https://doi.org/10.3847%2F1538-4357%2Faa943d)
 
-[4] Defferrard M., Milani M., Gusset F., Perraudin N., DeepSphere: a graph-based spherical CNN, arXiv e-prints, 2020, [https://ui.adsabs.harvard.edu/abs/2020arXiv201215000D](https://ui.adsabs.harvard.edu/abs/2020arXiv201215000D)
+[4] Defferrard M., Milani M., Gusset F., Perraudin N., *DeepSphere: a graph-based spherical CNN*, arXiv e-prints, 2020, [https://ui.adsabs.harvard.edu/abs/2020arXiv201215000D](https://ui.adsabs.harvard.edu/abs/2020arXiv201215000D)
 
-[5] Perraudin N,, Defferard M., Kacprzak T., Sgier R., DeepSphere: Efficient spherical convolutional neural network with HEALPix sampling for cosmological applications., Astronomy and Computing, 2019, [https://arxiv.org/abs/1810.12186](https://arxiv.org/abs/1810.12186)
+[5] Perraudin N,, Defferard M., Kacprzak T., Sgier R., *DeepSphere: Efficient spherical convolutional neural network with HEALPix sampling for cosmological applications.*, Astronomy and Computing, 2019, [https://arxiv.org/abs/1810.12186](https://arxiv.org/abs/1810.12186)
 
-[6] Fluri J., Kacprzak T., Lucchi A., Refregier A., Amara A., Hofmann T., Schneider A., Cosmological constraints with deep learning from KiDS-450 weak lensing maps, American Physical Society, 2019, [https://journals.aps.org/prd/abstract/10.1103/PhysRevD.100.063514](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.100.063514)
+[6] Fluri J., Kacprzak T., Lucchi A., Refregier A., Amara A., Hofmann T., Schneider A., *Cosmological constraints with deep learning from KiDS-450 weak lensing maps*, American Physical Society, 2019, [https://journals.aps.org/prd/abstract/10.1103/PhysRevD.100.063514](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.100.063514)
 
-[7] Fluri J., Kacprzak T., Regfregier A., Amara A., Lucchi A., Hofmann T., Cosmological constraints from noisy convergence maps through deep learning, American Physical Society, 2018, [https://journals.aps.org/prd/abstract/10.1103/PhysRevD.98.123518](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.98.123518)
+[7] Fluri J., Kacprzak T., Regfregier A., Amara A., Lucchi A., Hofmann T., *Cosmological constraints from noisy convergence maps through deep learning*, American Physical Society, 2018, [https://journals.aps.org/prd/abstract/10.1103/PhysRevD.98.123518](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.98.123518)
 
-[8] Perreault Levasseur L., Hezaveh Y., Wechsler R., Uncertainties in Parameters Estimated with Neural Networks: Application to Strong Gravitational Lensing, The Astrophysical Journal Letters, 2017, [https://iopscience.iop.org/article/10.3847/2041-8213/aa9704](https://iopscience.iop.org/article/10.3847/2041-8213/aa9704)
+[8] Perreault Levasseur L., Hezaveh Y., Wechsler R., *Uncertainties in Parameters Estimated with Neural Networks: Application to Strong Gravitational Lensing*, The Astrophysical Journal Letters, 2017, [https://iopscience.iop.org/article/10.3847/2041-8213/aa9704](https://iopscience.iop.org/article/10.3847/2041-8213/aa9704)
 
-[9] Brpnstein I. N., Semendjajew K.A., Musiol G., Mühling H., *Taschenbuch der Mathematik*, 
+[9] Bronstein I. N., Semendjajew K.A., Musiol G., Mühling H., *Taschenbuch der Mathematik*, Harri Deutsch Verlag, 2023
+
+[10] Ivezic Z., Connolly A. J., Vanderplas J.T., Gray A., *Statistics, Data Mining, and Machine Learning in Astronomy*, Princeton University Press, 2020
