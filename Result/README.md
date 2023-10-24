@@ -1,6 +1,6 @@
 ## Section 4: Result 
 A question arises: How can we leverage field-based methods, oftenn regarded as a black-box approaches, to update our understudying of unverse by Bayesian manner?
-To address this question, this thesis introduces two distinct models: the Gaussian model and the lognormal model, as elaborated in previous section. Additionally, three distinct test datasets are prepared for this section: Gaussian fields, lognormal fields, and convergence fields generated from T17 simulations. The lognormal and Gaussian test datasets consist of 300 random realizations, all corresponding to a single WMAP 9-year best-fit cosmology. This setup enables an examination of the constraining capabilities of both models and offers insights into bias introduced due to inconsistent approximations. The T17 simulations, encompassing  108 realizations, are based on the same cosmological parameters as the other test data sets, representing a more realistic and challenging scenario.
+To address this question, this thesis introduces two distinct models: the Gaussian model and the lognormal model, as elaborated in previous section. Additionally, three distinct test datasets are prepared for this section: Gaussian fields, lognormal fields, and convergence fields generated from T17 simulations [[1]](https://doi.org/10.3847%2F1538-4357%2Faa943d). The lognormal and Gaussian test datasets consist of 300 random realizations, all corresponding to a single WMAP 9-year best-fit cosmology. This setup enables an examination of the constraining capabilities of both models and offers insights into bias introduced due to inconsistent approximations. The T17 simulations, encompassing  108 realizations, are based on the same cosmological parameters as the other test data sets, representing a more realistic and challenging scenario.
 This section corresponds to the contents and plots in Chapter 8, Appendix B, Appendix C of my thesis ([Masterarbeit.pdf](Masterarbeit.pdf)). 
 
 ## Result Hghlights
@@ -18,54 +18,24 @@ This section corresponds to the contents and plots in Chapter 8, Appendix B, App
 (iii) The estimates of cosmological parameters obtained from our GCNN models roughly agree with the contour range from the Fisher analysis. However, our GCNN model does not capture the strong degenracy exihbited in the Fisher analysis.
 ## Contents
 
-In this directory, you'll find the following code and Python notebooks:
-1. **Validation_Simulaion_Pipeline.ipynb:** This notebook assesses the validity of our simulation pipeline by comparing the measured power spectrum with that from the T17 simulation [[2]](https://doi.org/10.3847%2F1538-4357%2Faa943d). It also discusses various correction factors applied to power spectrum modeling.
-   
-2. **Limber_Model_Without_Both.py:** Limber power spectrum without any correction factors.
+1. **Clouds_of_Points.ipynb:** Frequentist's taste analysis of test data set estimation from GCNN models. This covers Chapter 8.1 of my thesis ([Masterarbeit.pdf](Masterarbeit.pdf)).
 
-3. **Limber_Model_Test_Without_Finite_Resolution.py:** Limber power spectrum without any correction factors.
+2. **Posterior_Distribution.ipynb:** Here, we estimate the posterior distribution, including the estimation of the covariance matrix from neural networks in the $\sigma_8$-$\Omega_m$ plane. This covers Chapter 8.2 of my thesis ([Masterarbeit.pdf](Masterarbeit.pdf)).
 
-4. **Limber_Model_Test_Without_Shellthickness.py:** Limber power spectrum with finite angular resolution of sky maps.
-   
-5. **Limber_Model_Test.py:** Limber power spectrum with both correction factors.
+3. **Fisher_Analysis_1.ipynb:** Robustness check of our estimation can be done by comparing Fisher analysis. Here, the Fisher analysis of the 2-point function is performed. This covers Chapter 8.3 of my thesis ([Masterarbeit.pdf](Masterarbeit.pdf)).
 
-In the subdirectory, you can find the source code for the simulation pipeline used in my thesis:
+4. **Fisher_Analysis_2.ipynb:** Here, I compared our Gaussian GCNN estimation from Gaussian maps with the Fisher analysis of 2-point statistics on Gaussian lensing fields. This covers Chapter 8.4 of my thesis ([Masterarbeit.pdf](Masterarbeit.pdf)).
 
-6. **Prior_Training.ipynb:** This notebook samples a set of cosmological parameters from a range of priors using Latin Hypercube sampling [[8]](https://arxiv.org/abs/2106.03846). A total of 1,000 sets of cosmological parameters are sampled for training data sets.
-   
-7. **Prior_Validation.ipynb:** It is the same as Prior_Training.ipynb, but a total of 250 sets of cosmological parameters are sampled for validation data sets.
-   
-8. **Flask_sim_train.py:** This code covers steps (i) to (iv) in the structure of the pipeline. First, *class Cosmology_T17* loads constants, the redshift distribution, and cosmological parameters except $\sigma_8$ and $\Omega_m*. *class Kappa_Power_Spectrum_T17* calculates the convergence power spectrum. CLASS [[3]](https://arxiv.org/abs/1104.2932) is run in function LambdaCDM, then *function Cl* provides the convergence power spectrum from the given matter power spectrum. *class Generate_Flask_Maps* generates lognormal maps and Gaussian maps. *function log_normal_shift_parameter* is based on CosMomentum [[3]](https://doi.org/10.1093%2Fmnras%2Fstaa216) and calculates the shift parameter for given cosmological parameters. *function generate_log_normal_map* runs Flask [[6]](https://doi.org/10.1093%2Fmnras%2Fstw874) for the given convergence power spectrum from *class Kappa_Power_Spectrum_T17* and shift parameters from function log_normal_shift_parameter.
- 
-10. **Flask_sim_test.py:** This code is used for test data sets, similar to **Flask_sim_train.py**.
+5. **Appendix_B.ipynb:** Robustness checking using different runs of training data sets and test data sets. This covers Appendix B of my thesis ([Masterarbeit.pdf](Masterarbeit.pdf)).
 
-11. **Flask_sim_val.py:** This code is used for validation data sets, similar to **Flask_sim_train.py**.
+6. **Appendix_V.ipynb:** Previous analysis using $S_8$ instead of $\sigma_8$. This covers Appendix C of my thesis ([Masterarbeit.pdf](Masterarbeit.pdf)).
 
-12. **Flask_info.dat:** This data is updated throughout the simulation pipeline.
-
-13. **Flask.config:** It contains various variables used for Flask in **Flask_sim_train.py**.
-
-14. **Flask_val.config:** This is the configuration file for Flask used in validation data sets.
-
-## External Links and Installation
-(1) **Install HealPix**, You need HealPix (not healpy) to run Flask. You can install it from from [https://healpix.jpl.nasa.gov/html/install.htm](https://healpix.jpl.nasa.gov/html/install.htm)
-
-(2) **Install Flask**, You can install Flask using this guide at [https://github.com/ucl-cosmoparticles/flask](https://github.com/ucl-cosmoparticles/flask). If you encounter any errors, you may need to modify the source code.
 
 ## References
-[1] Hilbert S., Hartlap J., Scheider P., *Cosmic shear covariance: the log-normal approximation, Astronomy and Astrophysics*, 2011, [https://arxiv.org/abs/1105.3980](https://arxiv.org/abs/1105.3980) 
 
-[2] Takahashi R., Hamana T., Shirasaki M., Namikawa T., Nishimichi T., Osato K., Shiroyama K., *Full-sky Gravitational Lensing Simulation for Large-area Galaxy Surveys and Cosmic Microwave Background Experiments*, The Astrophysical Journal, 2017, [https://doi.org/10.3847%2F1538-4357%2Faa943d](https://doi.org/10.3847%2F1538-4357%2Faa943d)
+[1] Takahashi R., Hamana T., Shirasaki M., Namikawa T., Nishimichi T., Osato K., Shiroyama K., *Full-sky Gravitational Lensing Simulation for Large-area Galaxy Surveys and Cosmic Microwave Background Experiments*, The Astrophysical Journal, 2017, [https://doi.org/10.3847%2F1538-4357%2Faa943d](https://doi.org/10.3847%2F1538-4357%2Faa943d)
 
-[3] Lesgourgues J., *The Cosmic Linear Anisotropy Solving System (CLASS) I: Overview*, arXiv e-prints, 2011, [https://arxiv.org/abs/1104.2932](https://arxiv.org/abs/1104.2932)
+[2] Gong Z., Halder A., Barreira A., Seitz S., Friedrich O., *Cosmology from the integrated shear 3-point correlation function:  simulated likelihood analyses with machine-learning emulators*, Journal of Cosmology and Astroparticle Physics, 2023, [https://iopscience.iop.org/article/10.1088/1475-7516/2023/07/040](https://iopscience.iop.org/article/10.1088/1475-7516/2023/07/040)
 
-[4] Gong Z., Halder A., Barreira A., Seitz S., Friedrich O., *Cosmology from the integrated shear 3-point correlation function:  simulated likelihood analyses with machine-learning emulators*, Journal of Cosmology and Astroparticle Physics, 2023, [https://iopscience.iop.org/article/10.1088/1475-7516/2023/07/040](https://iopscience.iop.org/article/10.1088/1475-7516/2023/07/040)
-
-[5] Friedrich O., Uhlemann C., Villaescusa-Navarro F., Baldauf T., Manera M., Nishimichi T., *Primordial non-Gaussianity without tails - how to measure fNL with the bulk of the density PDF*, Monthly Notices of the Royal Astronomical Society, 2020, [https://doi.org/10.1093%2Fmnras%2Fstaa216](https://doi.org/10.1093%2Fmnras%2Fstaa216)
-
-[6]  Xavier H., Abdalla F., Joachimi B., *Improving lognormal models for cosmological fields*, Monthly Notices of the Royal Astronomical Society, 2016, [https://doi.org/10.1093%2Fmnras%2Fstw874](https://doi.org/10.1093%2Fmnras%2Fstw874)
-
-[7] Halder A., Friedrich O., Seitz S., Varga T., *The integrated three-point correlation function of cosmic shear*, Monthly Notices of the Royal Astronomical Society, 2021, [https://doi.org/10.1093%2Fmnras%2Fstab1801](https://doi.org/10.1093%2Fmnras%2Fstab1801)
-
-[8] Spurio Mancini A., Piras D., Alsing J., Joachimi B., Hobson M., *CosmoPower: emulating cosmological power spectra for accelerated Bayesian inference from next-generation surveys*, Monthly Notices of the Royal Astronomical Society, 2022, [https://arxiv.org/abs/2106.03846](https://arxiv.org/abs/2106.03846) 
+[3]  Xavier H., Abdalla F., Joachimi B., *Improving lognormal models for cosmological fields*, Monthly Notices of the Royal Astronomical Society, 2016, [https://doi.org/10.1093%2Fmnras%2Fstw874](https://doi.org/10.1093%2Fmnras%2Fstw874)
 
