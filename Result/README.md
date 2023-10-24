@@ -9,7 +9,11 @@ This section corresponds to the contents and plots in Chapter 8, Appendix B, App
 
 (i) Both of our inference pipelines yield unbiased parameter estimations when using the same types of training and test datasets at fiducial cosmology. However, different combinations of training and test data sets can introduce significant biases.
 
+[<img src="Posterior_Train_Gauss_S_8_11.jpg" width="300"/>](Posterior_Train_Gauss_S_8_11.jpg) [<img src="Posterior_Train_lognormal_S_8_11.jpg" width="300"/>](Posterior_Train_lognormal_S_8_11.jpg)
+
 (ii) Different combinations of test and training datasets can lead to the overestimation or underestimation of posterior distributions compared to the same combination of training and test data sets.
+
+[<img src="Posterior_Gauss_GCNN_VS_CL_Fisher.jpg" width="300"/>](Posterior_Gauss_GCNN_VS_CL_Fisher.jpg)
 
 (iii) The estimates of cosmological parameters obtained from our GCNN models roughly agree with the contour range from the Fisher analysis. However, our GCNN model does not capture the strong degenracy exihbited in the Fisher analysis.
 ## Contents
