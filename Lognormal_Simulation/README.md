@@ -54,18 +54,18 @@ In the subdirectory, you can find the source code for the simulation pipeline us
 (2) **Install Flask**, You can install Flask using this guide at [https://github.com/ucl-cosmoparticles/flask](https://github.com/ucl-cosmoparticles/flask). If you encounter any errors, you may need to modify the source code.
 
 ## References
-[1] Hilbert S., Hartlap J., Scheider P., Cosmic shear covariance: the log-normal approximation, Astronomy and Astrophysics, 2011, [https://arxiv.org/abs/1105.3980](https://arxiv.org/abs/1105.3980) 
+[1] Hilbert S., Hartlap J., Scheider P., *Cosmic shear covariance: the log-normal approximation, Astronomy and Astrophysics*, 2011, [https://arxiv.org/abs/1105.3980](https://arxiv.org/abs/1105.3980) 
 
-[2] Takahashi R., Hamana T., Shirasaki M., Namikawa T., Nishimichi T., Osato K., Shiroyama K., Full-sky Gravitational Lensing Simulation for Large-area Galaxy Surveys and Cosmic Microwave Background Experiments, The Astrophysical Journal, 2017, [https://doi.org/10.3847%2F1538-4357%2Faa943d](https://doi.org/10.3847%2F1538-4357%2Faa943d)
+[2] Takahashi R., Hamana T., Shirasaki M., Namikawa T., Nishimichi T., Osato K., Shiroyama K., *Full-sky Gravitational Lensing Simulation for Large-area Galaxy Surveys and Cosmic Microwave Background Experiments*, The Astrophysical Journal, 2017, [https://doi.org/10.3847%2F1538-4357%2Faa943d](https://doi.org/10.3847%2F1538-4357%2Faa943d)
 
-[3] Lesgourgues J., The Cosmic Linear Anisotropy Solving System (CLASS) I: Overview, arXiv e-prints, 2011, [https://arxiv.org/abs/1104.2932](https://arxiv.org/abs/1104.2932)
+[3] Lesgourgues J., *The Cosmic Linear Anisotropy Solving System (CLASS) I: Overview*, arXiv e-prints, 2011, [https://arxiv.org/abs/1104.2932](https://arxiv.org/abs/1104.2932)
 
-[4] Gong Z., Halder A., Barreira A., Seitz S., Friedrich O., Cosmology from the integrated shear 3-point correlation function:  simulated likelihood analyses with machine-learning emulators, Journal of Cosmology and Astroparticle Physics, 2023, [https://iopscience.iop.org/article/10.1088/1475-7516/2023/07/040](https://iopscience.iop.org/article/10.1088/1475-7516/2023/07/040)
+[4] Gong Z., Halder A., Barreira A., Seitz S., Friedrich O., *Cosmology from the integrated shear 3-point correlation function:  simulated likelihood analyses with machine-learning emulators*, Journal of Cosmology and Astroparticle Physics, 2023, [https://iopscience.iop.org/article/10.1088/1475-7516/2023/07/040](https://iopscience.iop.org/article/10.1088/1475-7516/2023/07/040)
 
-[5] Friedrich O., Uhlemann C., Villaescusa-Navarro F., Baldauf T., Manera M., Nishimichi T., Primordial non-Gaussianity without tails - how to measure fNL with the bulk of the density PDF, Monthly Notices of the Royal Astronomical Society, 2020, [https://doi.org/10.1093%2Fmnras%2Fstaa216](https://doi.org/10.1093%2Fmnras%2Fstaa216)
+[5] Friedrich O., Uhlemann C., Villaescusa-Navarro F., Baldauf T., Manera M., Nishimichi T., *Primordial non-Gaussianity without tails - how to measure fNL with the bulk of the density PDF*, Monthly Notices of the Royal Astronomical Society, 2020, [https://doi.org/10.1093%2Fmnras%2Fstaa216](https://doi.org/10.1093%2Fmnras%2Fstaa216)
 
-[6]  Xavier H., Abdalla F., Joachimi B., Improving lognormal models for cosmological fields, Monthly Notices of the Royal Astronomical Society, 2016, [https://doi.org/10.1093%2Fmnras%2Fstw874](https://doi.org/10.1093%2Fmnras%2Fstw874)
+[6]  Xavier H., Abdalla F., Joachimi B., *Improving lognormal models for cosmological fields*, Monthly Notices of the Royal Astronomical Society, 2016, [https://doi.org/10.1093%2Fmnras%2Fstw874](https://doi.org/10.1093%2Fmnras%2Fstw874)
 
-[7] Halder A., Friedrich O., Seitz S., Varga T., The integrated three-point correlation function of cosmic shear, Monthly Notices of the Royal Astronomical Society, 2021, [https://doi.org/10.1093%2Fmnras%2Fstab1801](https://doi.org/10.1093%2Fmnras%2Fstab1801)
+[7] Halder A., Friedrich O., Seitz S., Varga T., *The integrated three-point correlation function of cosmic shear*, Monthly Notices of the Royal Astronomical Society, 2021, [https://doi.org/10.1093%2Fmnras%2Fstab1801](https://doi.org/10.1093%2Fmnras%2Fstab1801)
 
-[8] Spurio Mancini A., Piras D., Alsing J., Joachimi B., Hobson M., CosmoPower: emulating cosmological power spectra for accelerated Bayesian inference from next-generation surveys, Monthly Notices of the Royal Astronomical Society, 2022, [https://arxiv.org/abs/2106.03846](https://arxiv.org/abs/2106.03846) 
+[8] Spurio Mancini A., Piras D., Alsing J., Joachimi B., Hobson M., *CosmoPower: emulating cosmological power spectra for accelerated Bayesian inference from next-generation surveys*, Monthly Notices of the Royal Astronomical Society, 2022, [https://arxiv.org/abs/2106.03846](https://arxiv.org/abs/2106.03846) 
