@@ -5,7 +5,7 @@ This section corresponds to the contents and plots in Chapter 8, Appendix B, App
 
 ## Result Hghlights
 
-[<img src="Flask_Simulation.PNG" width="700"/>](Flask_Simulation.PNG)
+[<img src="Train_Gauss_prediction_2D_S8_11.jpg" width="700"/>](Train_Gauss_prediction_2D_S8_11.jpg) [<img src="Train_lognormal_prediction_2D_S8_11.jpg" width="700"/>](Train_lognormal_prediction_2D_S8_11.jpg)
 
 (i) **Matter Power Spectrum Generation** Firstly, I generate the power spectrum for the provided cosmological parameters using the Boltzmann solver, which is CLASS [[3]](https://arxiv.org/abs/1104.2932).
 
