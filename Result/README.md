@@ -39,3 +39,7 @@ This section corresponds to the contents and plots in Chapter 8, Appendix B, App
 
 [3]  Xavier H., Abdalla F., Joachimi B., *Improving lognormal models for cosmological fields*, Monthly Notices of the Royal Astronomical Society, 2016, [https://doi.org/10.1093%2Fmnras%2Fstw874](https://doi.org/10.1093%2Fmnras%2Fstw874)
 
+[4] Bronstein I. N., Semendjajew K.A., Musiol G., Mühling H., *Taschenbuch der Mathematik*, Harri Deutsch Verlag, 2023
+
+[5] Ivezic Z., Connolly A. J., Vanderplas J.T., Gray A., *Statistics, Data Mining, and Machine Learning in Astronomy*, Princeton University Press, 2020
+
