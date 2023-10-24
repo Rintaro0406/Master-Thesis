@@ -32,7 +32,7 @@ In modern cosmology, including my thesis, numerical calculations are essential. 
 
 
 ## References
-[1] Dodelson S., chmidt F., Modern Cosmology Second Edition., Academic Press, 2020, ISBN 978-0-12-815948-4
+[1] Dodelson S., Schmidt F., Modern Cosmology Second Edition., Academic Press, 2020, ISBN 978-0-12-815948-4
 
 [2] Bartelmann M., Schneider P. , Weak gravitational lensing, Physics Reports, 2001, [https://arxiv.org/abs/astro-ph/9912508](https://arxiv.org/abs/astro-ph/9912508)
 
@@ -53,6 +53,3 @@ In modern cosmology, including my thesis, numerical calculations are essential. 
 [10] Defferrard M., Milani M., Gusset F., Perraudin N., DeepSphere: a graph-based spherical CNN, arXiv e-prints, 2020, [https://ui.adsabs.harvard.edu/abs/2020arXiv201215000D](https://ui.adsabs.harvard.edu/abs/2020arXiv201215000D)
 
 [11] Perraudin N,, Defferard M., Kacprzak T., Sgier R. DeepSphere: Efficient spherical convolutional neural network with {HEALPix} sampling for cosmological applications., Astronomy and Computing, 2019, [https://arxiv.org/abs/1810.12186](https://arxiv.org/abs/1810.12186)
-
- 
- 
