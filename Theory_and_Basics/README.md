@@ -32,24 +32,24 @@ In modern cosmology, including my thesis, numerical calculations are essential. 
 
 
 ## References
-[1] Dodelson S., Schmidt F., Modern Cosmology Second Edition., Academic Press, 2020, ISBN 978-0-12-815948-4
+[1] Dodelson S., Schmidt F., *Modern Cosmology Second Edition.*, Academic Press, 2020, ISBN 978-0-12-815948-4
 
-[2] Bartelmann M., Schneider P. , Weak gravitational lensing, Physics Reports, 2001, [https://arxiv.org/abs/astro-ph/9912508](https://arxiv.org/abs/astro-ph/9912508)
+[2] Bartelmann M., Schneider P. , *Weak gravitational lensing*, Physics Reports, 2001, [https://arxiv.org/abs/astro-ph/9912508](https://arxiv.org/abs/astro-ph/9912508)
 
-[3] Zonca A., Singer L., Lenz D., Reinecke M., Rosset C., Hivon E., Gorski K., healpy: equal area pixelization and spherical harmonics transforms for data on the sphere in Python., The Open Journal, 2019, [https://doi.org/10.21105/joss.01298](https://doi.org/10.21105/joss.01298) 
+[3] Zonca A., Singer L., Lenz D., Reinecke M., Rosset C., Hivon E., Gorski K., *healpy: equal area pixelization and spherical harmonics transforms for data on the sphere in Python.*, The Open Journal, 2019, [https://doi.org/10.21105/joss.01298](https://doi.org/10.21105/joss.01298) 
 
-[4] Gorski K., Hivon E., Banday A., Wandelt B., Hansen F., Reinecke M., Bartelmann M., HEALPix: A Framework for High-Resolution Discretization and Fast Analysis of Data Distributed on the Sphere., The Astrophysical Journal, 2005, [https://ui.adsabs.harvard.edu/abs/2005ApJ...622..759G](https://ui.adsabs.harvard.edu/abs/2005ApJ...622..759G)
+[4] Gorski K., Hivon E., Banday A., Wandelt B., Hansen F., Reinecke M., Bartelmann M., *HEALPix: A Framework for High-Resolution Discretization and Fast Analysis of Data Distributed on the Sphere.*, The Astrophysical Journal, 2005, [https://ui.adsabs.harvard.edu/abs/2005ApJ...622..759G](https://ui.adsabs.harvard.edu/abs/2005ApJ...622..759G)
 
-[5] Planck Collaboration, et al., Planck 2018 results. VI. Cosmological parameters., Astronomy and Astrphysics, 2020, [https://arxiv.org/abs/1807.06209](https://arxiv.org/abs/1807.06209)
+[5] Planck Collaboration, et al., *Planck 2018 results. VI. Cosmological parameters.*, Astronomy and Astrphysics, 2020, [https://arxiv.org/abs/1807.06209](https://arxiv.org/abs/1807.06209)
 
-[6] Takahashi R., Hamana T., Shirasaki M., Namikawa T., Nishimichi T., Osato K., Shiroyama K., Full-sky Gravitational Lensing Simulation for Large-area Galaxy Surveys and Cosmic Microwave Background Experiments, The Astrophysical Journal, 2017, [https://doi.org/10.3847%2F1538-4357%2Faa943d](https://doi.org/10.3847%2F1538-4357%2Faa943d)
+[6] Takahashi R., Hamana T., Shirasaki M., Namikawa T., Nishimichi T., Osato K., Shiroyama K., *Full-sky Gravitational Lensing Simulation for Large-area Galaxy Surveys and Cosmic Microwave Background Experiments*, The Astrophysical Journal, 2017, [https://doi.org/10.3847%2F1538-4357%2Faa943d](https://doi.org/10.3847%2F1538-4357%2Faa943d)
 
-[7] Mukhanov V., CMB-slow, or How to Estimate Cosmological Parameters by Hand, International Journal of Theoretical Physics, 2004, [https://arxiv.org/abs/astro-ph/0303072](https://arxiv.org/abs/astro-ph/0303072)
+[7] Mukhanov V., *CMB-slow, or How to Estimate Cosmological Parameters by Hand*, International Journal of Theoretical Physics, 2004, [https://arxiv.org/abs/astro-ph/0303072](https://arxiv.org/abs/astro-ph/0303072)
 
-[8] Lesgourgues J., The Cosmic Linear Anisotropy Solving System (CLASS) I: Overview, arXiv e-prints, 2011, [https://arxiv.org/abs/1104.2932](https://arxiv.org/abs/1104.2932)
+[8] Lesgourgues J., *The Cosmic Linear Anisotropy Solving System (CLASS) I: Overview, arXiv e-prints*, 2011, [https://arxiv.org/abs/1104.2932](https://arxiv.org/abs/1104.2932)
 
-[9] Chollet F., Pythonによるディープラーニング, マイナビ出版, 2021, ISBN 978-4-8399-7773-3
+[9] Chollet F., *Pythonによるディープラーニング*, マイナビ出版, 2021, ISBN 978-4-8399-7773-3
 
-[10] Defferrard M., Milani M., Gusset F., Perraudin N., DeepSphere: a graph-based spherical CNN, arXiv e-prints, 2020, [https://ui.adsabs.harvard.edu/abs/2020arXiv201215000D](https://ui.adsabs.harvard.edu/abs/2020arXiv201215000D)
+[10] Defferrard M., Milani M., Gusset F., Perraudin N., *DeepSphere: a graph-based spherical CNN, arXiv e-prints*, 2020, [https://ui.adsabs.harvard.edu/abs/2020arXiv201215000D](https://ui.adsabs.harvard.edu/abs/2020arXiv201215000D)
 
-[11] Perraudin N,, Defferard M., Kacprzak T., Sgier R. DeepSphere: Efficient spherical convolutional neural network with {HEALPix} sampling for cosmological applications., Astronomy and Computing, 2019, [https://arxiv.org/abs/1810.12186](https://arxiv.org/abs/1810.12186)
+[11] Perraudin N,, Defferard M., Kacprzak T., Sgier R. *DeepSphere: Efficient spherical convolutional neural network with {HEALPix} sampling for cosmological applications.*, Astronomy and Computing, 2019, [https://arxiv.org/abs/1810.12186](https://arxiv.org/abs/1810.12186)
