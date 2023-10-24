@@ -1,5 +1,5 @@
 ## Section 3: GCNN Inference
-The complementary aspect of simulation is inference, where we aim to estimate the cosmological parameters from the density field. In my inference pipeline, I utilize the DeepSphere framework, which incorporates graph convolutional neural networks (GCNN) instead of summarizing data to a two-point function. This directory contains my code for the training steps of GCNN models and data preprocessing. The content in this subdirectory primarily aligns with Chapter 7 of my Master's thesis  [[Masterarbeit.pdf]](Masterarbeit.pdf).
+The complementary aspect of simulation is inference, where we aim to estimate the cosmological parameters from the density field. In my inference pipeline, I utilize the DeepSphere framework, which incorporates graph convolutional neural networks (GCNN) instead of summarizing data to a two-point function. This directory contains my code for the training steps of GCNN models and data preprocessing. The content in this subdirectory primarily aligns with Chapter 7 of my [Master's thesis](Masterarbeit.pdf).
 
 ## Structure of Inference Pipeline
 
@@ -40,13 +40,13 @@ In the subdirectory **Data_Preprocessing**, you can find the source code for the
    
 In the subdirectory **GCNN_Models**, you can find the source code for the trained models used in my thesis:
 
-9. **Gauss_model.ipynb:** Constructs Gaussian model 1 in my thesis [[Masterarbeit.pdf]](Masterarbeit.pdf).
+9. **Gauss_model.ipynb:** Constructs Gaussian model 1 in [my thesis](Masterarbeit.pdf).
 
-10. **Gauss_model_2.ipynb:** Constructs Gaussian model 2 in my thesis [[Masterarbeit.pdf]](Masterarbeit.pdf).
+10. **Gauss_model_2.ipynb:** Constructs Gaussian model 2 in [my thesis](Masterarbeit.pdf).
 
-11. **lognormal_model.ipynb.ipynb:** Constructs lognormal model 1 in my thesis [[Masterarbeit.pdf]](Masterarbeit.pdf).
+11. **lognormal_model.ipynb.ipynb:** Constructs lognormal model 1 in [my thesis](Masterarbeit.pdf).
 
-12. **lognormal_model_2.ipynb.ipynb:** Constructs lognormal model 2 in my thesis [[Masterarbeit.pdf]](Masterarbeit.pdf).
+12. **lognormal_model_2.ipynb.ipynb:** Constructs lognormal model 2 in [my thesis](Masterarbeit.pdf).
 
 13. **cov_by_hand.py:**  Calculates sample covariance and $\chi^2$. I don't remember why I didn't just use *numpy*.
 
