@@ -3,7 +3,7 @@ The complementary aspect of simulation is inference, where we aim to estimate th
 
 ## Structure of Simulation Pipeline
 
-[<img src="Flask_Simulation.PNG" width="700"/>](Flask_Simulation.PNG)
+[<img src="GCNN_model.jpg" width="700"/>](GCNN_model.jpg)
 
 (i) **Matter Power Spectrum Generation** Firstly, I generate the power spectrum for the provided cosmological parameters using the Boltzmann solver, which is CLASS [[3]](https://arxiv.org/abs/1104.2932).
 
