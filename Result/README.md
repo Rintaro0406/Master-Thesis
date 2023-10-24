@@ -28,7 +28,7 @@ This section corresponds to the contents and plots in Chapter 8, Appendix B, App
 
 5. **Appendix_B.ipynb:** Robustness checking using different runs of training data sets and test data sets. This covers Appendix B of my thesis ([Masterarbeit.pdf](Masterarbeit.pdf)).
 
-6. **Appendix_V.ipynb:** Previous analysis using $S_8$ instead of $\sigma_8$. This covers Appendix C of my thesis ([Masterarbeit.pdf](Masterarbeit.pdf)).
+6. **Appendix_C.ipynb:** Previous analysis using $S_8$ instead of $\sigma_8$. This covers Appendix C of my thesis ([Masterarbeit.pdf](Masterarbeit.pdf)).
 
 
 ## References
