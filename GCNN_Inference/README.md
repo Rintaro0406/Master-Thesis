@@ -7,45 +7,55 @@ The complementary aspect of simulation is inference, where we aim to estimate th
 
 The primary focus of this thesis is to investigate the validity of the Lognormal model approximation. As such, I trained GCNN networks using the Lognormal model, and additionally generated the Gaussian model for comparison. We can also assess the validity of our neural network model by comparing it with the Fisher contour.
 
-(i) **Inputs** The input data consists of maps that have been downgraded to NSIDE=128, along with cosmological parameters as labels. For the Gaussian model, I used Gaussian maps as training data, and for the Lognormal model, I used lognormal maps as training data. Apart from the input data, the model architecture and hyperparameters are the same for both models. 
+(i) **Inputs:** The input data consists of maps that have been downgraded to NSIDE=128, along with cosmological parameters as labels. For the Gaussian model, I used Gaussian maps as training data, and for the Lognormal model, I used lognormal maps as training data. Apart from the input data, the model architecture and hyperparameters are the same for both models. 
 
-(ii) **DeepSphere** In contrast to CNN, GCNN can handle input data that is not defined in Euclidean space. DeepSphere is a GCNN package designed for spherical data, such as HEALPix maps. I employed layers from DeepSphere to process full-sky maps.
+(ii) **DeepSphere:** In contrast to CNN, GCNN can handle input data that is not defined in Euclidean space. DeepSphere is a GCNN package designed for spherical data, such as HEALPix maps. I employed layers from DeepSphere to process full-sky maps.
 
-(iii) **Loss Function** The loss function used is the negative Gaussian log-likelihood loss. This loss function provides estimates of parameters and the covariance matrix under the Gaussian assumption.
+(iii) **Loss Function:** The loss function used is the negative Gaussian log-likelihood loss. This loss function provides estimates of parameters and the covariance matrix under the Gaussian assumption.
 
-(iV) **Outouts** The first two outputs are estimates of model parameters, specifically $\Omega_m$ and $\sigma_8$. The remaining three outputs are estimates of the covariance matrix.
+(iV) **Outouts:** The first two outputs are estimates of model parameters, specifically $\Omega_m$ and $\sigma_8$. The remaining three outputs are estimates of the covariance matrix.
 
 
 ## Contents
 
 In this directory, you'll find the following code and Python notebooks:
-1. **Validation_Simulaion_Pipeline.ipynb:** This notebook assesses the validity of our simulation pipeline by comparing the measured power spectrum with that from the T17 simulation [[2]](https://doi.org/10.3847%2F1538-4357%2Faa943d). It also discusses various correction factors applied to power spectrum modeling.
-   
-2. **Limber_Model_Without_Both.py:** Limber power spectrum without any correction factors.
 
-3. **Limber_Model_Test_Without_Finite_Resolution.py:** Limber power spectrum without any correction factors.
-
-4. **Limber_Model_Test_Without_Shellthickness.py:** Limber power spectrum with finite angular resolution of sky maps.
+1. **Downgrading_Validation.ipynb:** This notebook examines the effect of downgrading using KL divergence.
    
-5. **Limber_Model_Test.py:** Limber power spectrum with both correction factors.
+2. **Loss_comparison.ipynb:** This notebook visualizes the loss and metric curves during training steps. It includes the content of Appendix B.
 
-In the subdirectory, you can find the source code for the simulation pipeline used in my thesis:
+In the subdirectory **Data_Preprocessing**, you can find the source code for the downgrading used in my thesis:
 
-6. **Prior_Training.ipynb:** This notebook samples a set of cosmological parameters from a range of priors using Latin Hypercube sampling [[8]](https://arxiv.org/abs/2106.03846). A total of 1,000 sets of cosmological parameters are sampled for training data sets.
+3. **Down_grade_Training.py:** Multiprocessing of *healpy.udgrad* for speeding up.
    
-7. **Prior_Validation.ipynb:** It is the same as Prior_Training.ipynb, but a total of 250 sets of cosmological parameters are sampled for validation data sets.
+4. **Down_grade_Test.py:** Same as **Down_grade_Training.py**.
    
-8. **Flask_sim_train.py:** This code covers steps (i) to (iv) in the structure of the pipeline. First, *class Cosmology_T17* loads constants, the redshift distribution, and cosmological parameters except $\sigma_8$ and $\Omega_m*. *class Kappa_Power_Spectrum_T17* calculates the convergence power spectrum. CLASS [[3]](https://arxiv.org/abs/1104.2932) is run in function LambdaCDM, then *function Cl* provides the convergence power spectrum from the given matter power spectrum. *class Generate_Flask_Maps* generates lognormal maps and Gaussian maps. *function log_normal_shift_parameter* is based on CosMomentum [[3]](https://doi.org/10.1093%2Fmnras%2Fstaa216) and calculates the shift parameter for given cosmological parameters. *function generate_log_normal_map* runs Flask [[6]](https://doi.org/10.1093%2Fmnras%2Fstw874) for the given convergence power spectrum from *class Kappa_Power_Spectrum_T17* and shift parameters from function log_normal_shift_parameter.
+5. **Down_grade_Validation.py:** Same as **Down_grade_Training.py**.
  
-10. **Flask_sim_test.py:** This code is used for test data sets, similar to **Flask_sim_train.py**.
+6. **Get_Cl.py:** Multiprocessing of *healpy.anafast* for speeding up.
 
-11. **Flask_sim_val.py:** This code is used for validation data sets, similar to **Flask_sim_train.py**.
+7. **Making_npz_file.py:** Creating a *.npz* file.
 
-12. **Flask_info.dat:** This data is updated throughout the simulation pipeline.
+8. **Making_Test_npz_file.py:** Same as **Making_npz_file.py**.
+   
+In the subdirectory **GCNN_Models**, you can find the source code for the trained models used in my thesis:
 
-13. **Flask.config:** It contains various variables used for Flask in **Flask_sim_train.py**.
+9. **Gauss_model.ipynb:** Constructs Gaussian model 1 in my thesis.
 
-14. **Flask_val.config:** This is the configuration file for Flask used in validation data sets.
+10. **Gauss_model_2.ipynb:** Constructs Gaussian model 2 in my thesis.
+
+11. **lognormal_model.ipynb.ipynb:** Constructs lognormal model 1 in my thesis.
+
+12. **lognormal_model_2.ipynb.ipynb:** Constructs lognormal model 2 in my thesis.
+
+13. **cov_by_hand.py:**  Calculates sample covariance and $\chi^2$. I don't remember why I didn't just use *numpy*.
+
+14. **Loss_mean.py:** Calculates the loss function and metrics.
+
+15. **standard_2D.py:** Stadidizing method for data preprocessing. I did not end up using it.
+
+16. **__init__.py, build_model.py, gnn_layers_custom.py, gnn_transformers_custom.py, utils_custom.py:** Customized modules of *DeepSphere* used somewhere in the project.
+
 
 ## External Links and Installation
 (1) **Install HealPix**, You need HealPix (not healpy) to run Flask. You can install it from from [https://healpix.jpl.nasa.gov/html/install.htm](https://healpix.jpl.nasa.gov/html/install.htm)
