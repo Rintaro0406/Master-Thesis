@@ -7,14 +7,11 @@ This section corresponds to the contents and plots in Chapter 8, Appendix B, App
 
 [<img src="Train_Gauss_prediction_2D_S8_11.jpg" width="300"/>](Train_Gauss_prediction_2D_S8_11.jpg) [<img src="Train_lognormal_prediction_2D_S8_11.jpg" width="300"/>](Train_lognormal_prediction_2D_S8_11.jpg)
 
-(i) **Matter Power Spectrum Generation** Firstly, I generate the power spectrum for the provided cosmological parameters using the Boltzmann solver, which is CLASS [[3]](https://arxiv.org/abs/1104.2932).
+(i) Both of our inference pipelines yield unbiased parameter estimations when using the same types of training and test datasets at fiducial cosmology. However, different combinations of training and test data sets can introduce significant biases.
 
-(ii) **Projection Integral** The line of sight integration of matter spectrum yields the convergence angular power spectrum. Here is employing the source galaxy redshift distribution from DES Y3 data [[4]](https://iopscience.iop.org/article/10.1088/1475-7516/2023/07/040).
+(ii) Different combinations of test and training datasets can lead to the overestimation or underestimation of posterior distributions compared to the same combination of training and test data sets.
 
-(iii) **Lognormal Shift Parameter** To realize the lognormal field, a lognormal shift parameter is required for given cosmology. This parameter is computed using CosMomentum [[5]](https://doi.org/10.1093%2Fmnras%2Fstaa216), a tool to model the PDF of cosmic density fields.
-
-(iV) **Generation of Convergence Maps** Generate full-sky lognormal convergence maps along with correspondng Gaussian convergence maps for the training and validation datasets. These maps are produced using the input power spectra and lognormal shift parameters, employing Flask [[6]](https://doi.org/10.1093%2Fmnras%2Fstw874).
-
+(iii) The estimates of cosmological parameters obtained from our GCNN models roughly agree with the contour range from the Fisher analysis. However, our GCNN model does not capture the strong degenracy exihbited in the Fisher analysis.
 ## Contents
 
 In this directory, you'll find the following code and Python notebooks:
