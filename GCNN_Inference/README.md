@@ -1,5 +1,5 @@
 ## Section 2: GCNN Inference
-The complementary aspect of simulation is inference, where we aim to estimate the cosmological parameters from the density field. In my inference pipeline, I utilize the DeepSphere framework, which incorporates graph convolutional neural networks (GCNN) instead of summarizing data to a two-point function. This directory contains my code for the training steps of GCNN models and data preprocessing. The content in this subdirectory primarily aligns with Chapter 7 of my Master's thesis  [Masterarbeit.pdf](Masterarbeit.pdf).
+The complementary aspect of simulation is inference, where we aim to estimate the cosmological parameters from the density field. In my inference pipeline, I utilize the DeepSphere framework, which incorporates graph convolutional neural networks (GCNN) instead of summarizing data to a two-point function. This directory contains my code for the training steps of GCNN models and data preprocessing. The content in this subdirectory primarily aligns with Chapter 7 of my Master's thesis  [[Masterarbeit.pdf]](Masterarbeit.pdf).
 
 ## Structure of Inference Pipeline
 
@@ -40,13 +40,13 @@ In the subdirectory **Data_Preprocessing**, you can find the source code for the
    
 In the subdirectory **GCNN_Models**, you can find the source code for the trained models used in my thesis:
 
-9. **Gauss_model.ipynb:** Constructs Gaussian model 1 in my thesis.
+9. **Gauss_model.ipynb:** Constructs Gaussian model 1 in my thesis [[Masterarbeit.pdf]](Masterarbeit.pdf).
 
-10. **Gauss_model_2.ipynb:** Constructs Gaussian model 2 in my thesis.
+10. **Gauss_model_2.ipynb:** Constructs Gaussian model 2 in my thesis [[Masterarbeit.pdf]](Masterarbeit.pdf).
 
-11. **lognormal_model.ipynb.ipynb:** Constructs lognormal model 1 in my thesis.
+11. **lognormal_model.ipynb.ipynb:** Constructs lognormal model 1 in my thesis [[Masterarbeit.pdf]](Masterarbeit.pdf).
 
-12. **lognormal_model_2.ipynb.ipynb:** Constructs lognormal model 2 in my thesis.
+12. **lognormal_model_2.ipynb.ipynb:** Constructs lognormal model 2 in my thesis [[Masterarbeit.pdf]](Masterarbeit.pdf).
 
 13. **cov_by_hand.py:**  Calculates sample covariance and $\chi^2$. I don't remember why I didn't just use *numpy*.
 
@@ -57,25 +57,5 @@ In the subdirectory **GCNN_Models**, you can find the source code for the traine
 16. **__init__.py, build_model.py, gnn_layers_custom.py, gnn_transformers_custom.py, utils_custom.py:** Customized modules of *DeepSphere* used somewhere in the project.
 
 
-## External Links and Installation
-(1) **Install HealPix**, You need HealPix (not healpy) to run Flask. You can install it from from [https://healpix.jpl.nasa.gov/html/install.htm](https://healpix.jpl.nasa.gov/html/install.htm)
-
-(2) **Install Flask**, You can install Flask using this guide at [https://github.com/ucl-cosmoparticles/flask](https://github.com/ucl-cosmoparticles/flask). If you encounter any errors, you may need to modify the source code.
-
 ## References
-[1] Hilbert S., Hartlap J., Scheider P., Cosmic shear covariance: the log-normal approximation, Astronomy and Astrophysics, 2011, [https://arxiv.org/abs/1105.3980](https://arxiv.org/abs/1105.3980) 
-
-[2] Takahashi R., Hamana T., Shirasaki M., Namikawa T., Nishimichi T., Osato K., Shiroyama K., Full-sky Gravitational Lensing Simulation for Large-area Galaxy Surveys and Cosmic Microwave Background Experiments, The Astrophysical Journal, 2017, [https://doi.org/10.3847%2F1538-4357%2Faa943d](https://doi.org/10.3847%2F1538-4357%2Faa943d)
-
-[3] Lesgourgues J., The Cosmic Linear Anisotropy Solving System (CLASS) I: Overview, arXiv e-prints, 2011, [https://arxiv.org/abs/1104.2932](https://arxiv.org/abs/1104.2932)
-
-[4] Gong Z., Halder A., Barreira A., Seitz S., Friedrich O., Cosmology from the integrated shear 3-point correlation function:  simulated likelihood analyses with machine-learning emulators, Journal of Cosmology and Astroparticle Physics, 2023, [https://iopscience.iop.org/article/10.1088/1475-7516/2023/07/040](https://iopscience.iop.org/article/10.1088/1475-7516/2023/07/040)
-
-[5] Friedrich O., Uhlemann C., Villaescusa-Navarro F., Baldauf T., Manera M., Nishimichi T., Primordial non-Gaussianity without tails - how to measure fNL with the bulk of the density PDF, Monthly Notices of the Royal Astronomical Society, 2020, [https://doi.org/10.1093%2Fmnras%2Fstaa216](https://doi.org/10.1093%2Fmnras%2Fstaa216)
-
-[6]  Xavier H., Abdalla F., Joachimi B., Improving lognormal models for cosmological fields, Monthly Notices of the Royal Astronomical Society, 2016, [https://doi.org/10.1093%2Fmnras%2Fstw874](https://doi.org/10.1093%2Fmnras%2Fstw874)
-
-[7] Halder A., Friedrich O., Seitz S., Varga T., The integrated three-point correlation function of cosmic shear, Monthly Notices of the Royal Astronomical Society, 2021, [https://doi.org/10.1093%2Fmnras%2Fstab1801](https://doi.org/10.1093%2Fmnras%2Fstab1801)
-
-[8] Spurio Mancini A., Piras D., Alsing J., Joachimi B., Hobson M., CosmoPower: emulating cosmological power spectra for accelerated Bayesian inference from next-generation surveys, Monthly Notices of the Royal Astronomical Society, 2022, [https://arxiv.org/abs/2106.03846](https://arxiv.org/abs/2106.03846) 
 
