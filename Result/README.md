@@ -3,7 +3,7 @@ A question arises: How can we leverage field-based methods, oftenn regarded as a
 To address this question, this thesis introduces two distinct models: the Gaussian model and the lognormal model, as elaborated in previous section. Additionally, three distinct test datasets are prepared for this section: Gaussian fields, lognormal fields, and convergence fields generated from T17 simulations [[1]](https://doi.org/10.3847%2F1538-4357%2Faa943d). The lognormal and Gaussian test datasets consist of 300 random realizations, all corresponding to a single WMAP 9-year best-fit cosmology. This setup enables an examination of the constraining capabilities of both models and offers insights into bias introduced due to inconsistent approximations. The T17 simulations, encompassing  108 realizations, are based on the same cosmological parameters as the other test data sets, representing a more realistic and challenging scenario.
 This section corresponds to the contents and plots in Chapter 8, Appendix B, Appendix C of my thesis ([Masterarbeit.pdf](Masterarbeit.pdf)). 
 
-## Result Hghlights
+## Result Highlights
 
 [<img src="Train_Gauss_prediction_2D_S8_11.jpg" width="300"/>](Train_Gauss_prediction_2D_S8_11.jpg) [<img src="Train_lognormal_prediction_2D_S8_11.jpg" width="300"/>](Train_lognormal_prediction_2D_S8_11.jpg)
 
