@@ -75,3 +75,4 @@ In the subdirectory **GCNN_Models**, you can find the source code for the traine
 
 [8] Perreault Levasseur L., Hezaveh Y., Wechsler R., Uncertainties in Parameters Estimated with Neural Networks: Application to Strong Gravitational Lensing, The Astrophysical Journal Letters, 2017, [https://iopscience.iop.org/article/10.3847/2041-8213/aa9704](https://iopscience.iop.org/article/10.3847/2041-8213/aa9704)
 
+[9] Brpnstein I. N., Semendjajew K.A., Musiol G., Mühling H., *Taschenbuch der Mathematik*, 
